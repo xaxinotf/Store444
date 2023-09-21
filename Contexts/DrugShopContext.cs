@@ -24,13 +24,7 @@ public partial class DrugShopContext : DbContext
 
     public virtual DbSet<ShipType> ShipTypes { get; set; }
 
-<<<<<<< HEAD
- 
-=======
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server= (LocalDB)\\MSSQLLocalDB;Database=DrugShop; Trusted_Connection=True;");
 
->>>>>>> 6b13e50656583119b84ad432225d90980e6f4319
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Order>(entity =>
