@@ -10,6 +10,7 @@ public partial class Order
     public int Id { get; set; }
     [DisplayName("Статус замовлення")]
     public Status Status { get; set; }
+    public Status Status { get; set; }
     public int? ShipTypeId { get; set; }
 
     public int? PaymentTypeId { get; set; }
